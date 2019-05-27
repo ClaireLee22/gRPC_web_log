@@ -14,7 +14,11 @@ Use gRPC to build a client/server system in Go.
   | RemoveSpecifiedArticle | doRemoveSpecifiedArticle |
   
   1. SaveAllArticles \ doArticleStreaming 
-     Server receive all articles which are streaming from client and save those received article into a json file for future reference.
+  
+    -Server: receive articles which are streaming from client and save those received articles into a json file for future reference.
+    -Client: provide a text file of articles to server
+    
+    
 
 ## Getting Started
 ### Prerequisites
