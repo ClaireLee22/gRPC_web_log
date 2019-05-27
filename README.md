@@ -64,7 +64,11 @@ Use gRPC to build a client/server system in Go.
 
 In a terminal or command window, run one of the following commands:
 
+- Clone the repository
+- Put the project folder in GOPATH/src/
+
 ```bash
-python Doc2Doc_comparison.py
+go run web_log/web_log_server/web_log_server.go 
+go run web_log/web_log_client/web_log_client.go 
 ```  
 
