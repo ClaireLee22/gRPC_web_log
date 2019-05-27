@@ -1,0 +1,3 @@
+2019-05-27T17:05:12.57+08:00  ERROR 127.0.0.1:59749 GetSpecifiedArticle /Users/clairelee/go/src/grpc_web_log/web_log/web_log_server/web_log_server.go 309 articleID is NOT existed.
+2019-05-27T17:05:12.57+08:00  ERROR 127.0.0.1:59749 UpdateSpecifiedArticle /Users/clairelee/go/src/grpc_web_log/web_log/web_log_server/web_log_server.go 348 articleID is NOT existed.
+2019-05-27T17:05:12.57+08:00  ERROR 127.0.0.1:59749 RemoveSpecifiedArticle /Users/clairelee/go/src/grpc_web_log/web_log/web_log_server/web_log_server.go 387 articleID is NOT existed.
