@@ -1,1 +1,32 @@
 # gRPC_web_log
+
+## Project Overview
+### Project Description
+Use gRPC to build a client/server system in Go.
+  | RPC method  | Client request |
+  | ------------- | ------------- |
+  | SaveAllArticles  | doArticleStreaming  |
+  | GetAllArticles | doAllArticles  |
+  | GetSpecifiedArticle | doSpecifiedArticle |
+  | UpdateSpecifiedArticle| doUpdateSpecifiedArticle  |
+  | RemoveSpecifiedArticle | doRemoveSpecifiedArticle |
+
+## Getting Started
+### Prerequisites
+
+This project requires **Python 3.6** and the following Python libraries installed:
+
+- [NumPy](http://www.numpy.org/)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [tensorflow](https://www.tensorflow.org/install/pip)
+
+
+### Run
+
+In a terminal or command window, run one of the following commands:
+
+```bash
+python Doc2Doc_comparison.py
+```  
+
