@@ -66,9 +66,10 @@ In a terminal or command window, run one of the following commands:
 
 - Clone the repository
 - Put the project folder in GOPATH/src/
+- cd to root directory (i.e. grpc_web_log)
 
 ```bash
-go run web_log/web_log_server/web_log_server.go 
-go run web_log/web_log_client/web_log_client.go 
+  go run web_log/web_log_server/web_log_server.go 
+  go run web_log/web_log_client/web_log_client.go 
 ```  
 
