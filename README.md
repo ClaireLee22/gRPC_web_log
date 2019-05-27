@@ -2,7 +2,9 @@
 
 ## Project Overview
 ### Project Description
+
 Use gRPC to build a client/server system in Go.
+
   | RPC method  | Client request |
   | ------------- | ------------- |
   | SaveAllArticles  | doArticleStreaming  |
