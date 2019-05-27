@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package web_log;
+option go_package="web_log_pb";
+
+message SaveAllArticlesRequest {
+    string article = 1;
+}
+
+message SaveAllArticlesResponse {
+    string result = 1;
+}
+
+message GetAllArticlesRequest {
+
+}
+
+message GetAllArticlesResponse {
+    string result = 1;
+}
+
+message GetSpecifiedArticleRequest {
+    string articleID = 1;
+}
+
+message GetSpecifiedArticleResponse {
+    string articleID = 1;
+    string title = 2;
+    string content = 3;
+}
+
+message UpdateSpecifiedArticleRequest {
+    string articleID = 1;
+    string title = 2;
+    string content = 3;
+}
+
+message UpdateSpecifiedArticleResponse {
+    string result = 1;
+}
+
+message RemoveSpecifiedArticleRequest {
+    string articleID = 1;
+}
+
+message RemoveSpecifiedArticleResponse {
+    string result = 1;
+}
+
+service WebLogService{
+    // Client Streaming
+    rpc SaveAllArticles(stream SaveAllArticlesRequest) returns (SaveAllArticlesResponse){};
+
+    // Unary
+    rpc GetAllArticles(GetAllArticlesRequest) returns (GetAllArticlesResponse){};
+
+    // Unary
+    rpc GetSpecifiedArticle(GetSpecifiedArticleRequest) returns (GetSpecifiedArticleResponse){};
+
+    // Unary
+    rpc UpdateSpecifiedArticle(UpdateSpecifiedArticleRequest) returns (UpdateSpecifiedArticleResponse){};
+
+    // Unary
+    rpc RemoveSpecifiedArticle(RemoveSpecifiedArticleRequest) returns (RemoveSpecifiedArticleResponse){};
+}
