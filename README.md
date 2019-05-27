@@ -45,6 +45,10 @@ Use gRPC to build a client/server system in Go.
 ### Prerequisites
 
 - [Go](https://golang.org/doc/install)
+```bash
+  tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+  export PATH=$PATH:/usr/local/go/bin
+``` 
 - [grpc](https://github.com/grpc/grpc-go)
 ```bash
   go get -u google.golang.org/grpc
