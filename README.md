@@ -6,7 +6,7 @@
 Use gRPC to build a client/server system in Go.
 
   | RPC method  | Client request |
-  | ------------- | ------------- |
+  | :---  | -:---  |
   | SaveAllArticles  | doArticleStreaming  |
   | GetAllArticles | doAllArticles  |
   | GetSpecifiedArticle | doSpecifiedArticle |
