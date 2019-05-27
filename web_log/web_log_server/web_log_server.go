@@ -199,7 +199,7 @@ func isIDExist(currentArticles Articles, reqID string) (bool, string) {
 	return false, "not exist"
 }
 
-// gRPC server for SaveAllArticles
+// gRPC service for SaveAllArticles
 func (*server) SaveAllArticles(stream web_log_pb.WebLogService_SaveAllArticlesServer) error {
 	fmt.Println("SaveAllArticles function was invoked with a streaming request")
 	accessWebLogger.ClientIP = getClientIP(stream.Context())
@@ -253,7 +253,7 @@ func (*server) SaveAllArticles(stream web_log_pb.WebLogService_SaveAllArticlesSe
 	}
 }
 
-// gRPC server for GetAllArticles
+// gRPC service for GetAllArticles
 func (*server) GetAllArticles(ctx context.Context, req *web_log_pb.GetAllArticlesRequest) (*web_log_pb.GetAllArticlesResponse, error) {
 	fmt.Println("GetArticles function was invoked with a streaming request")
 	accessWebLogger.ClientIP = getClientIP(ctx)
@@ -282,7 +282,7 @@ func (*server) GetAllArticles(ctx context.Context, req *web_log_pb.GetAllArticle
 	return res, nil
 }
 
-// gRPC server for GetSpecifiedArticle
+// gRPC service for GetSpecifiedArticle
 func (*server) GetSpecifiedArticle(ctx context.Context, req *web_log_pb.GetSpecifiedArticleRequest) (*web_log_pb.GetSpecifiedArticleResponse, error) {
 	fmt.Printf("GetSpecifiedArticle function was invoked with %v\n", req)
 	accessWebLogger.ClientIP = getClientIP(ctx)
@@ -322,7 +322,7 @@ func (*server) GetSpecifiedArticle(ctx context.Context, req *web_log_pb.GetSpeci
 	return res, nil
 }
 
-// gRPC server for UpdateSpecifiedArticle
+// gRPC service for UpdateSpecifiedArticle
 func (*server) UpdateSpecifiedArticle(ctx context.Context, req *web_log_pb.UpdateSpecifiedArticleRequest) (*web_log_pb.UpdateSpecifiedArticleResponse, error) {
 	fmt.Printf("UpdateSpecifiedArticle function was invoked with %v\n", req)
 	accessWebLogger.ClientIP = getClientIP(ctx)
@@ -360,7 +360,7 @@ func (*server) UpdateSpecifiedArticle(ctx context.Context, req *web_log_pb.Updat
 	return res, nil
 }
 
-// gRPC server for RemoveSpecifiedArticle
+// gRPC service for RemoveSpecifiedArticle
 func (*server) RemoveSpecifiedArticle(ctx context.Context, req *web_log_pb.RemoveSpecifiedArticleRequest) (*web_log_pb.RemoveSpecifiedArticleResponse, error) {
 	fmt.Printf("RemoveSpecifiedArticle function was invoked with %v\n", req)
 	accessWebLogger.ClientIP = getClientIP(ctx)
