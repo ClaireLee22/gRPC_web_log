@@ -44,12 +44,16 @@ Use gRPC to build a client/server system in Go.
 ## Getting Started
 ### Prerequisites
 
-This project requires **Python 3.6** and the following Python libraries installed:
+- [Go](https://golang.org/doc/install)
+- [grpc](https://github.com/grpc/grpc-go)
+```bash
+  go get -u google.golang.org/grpc
+```  
+- [protocol buffer](https://github.com/golang/protobuf)
+```bash
+  go get -u google.golang.org/grpc
+```  
 
-- [NumPy](http://www.numpy.org/)
-- [matplotlib](http://matplotlib.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
-- [tensorflow](https://www.tensorflow.org/install/pip)
 
 
 ### Run
